@@ -36,6 +36,7 @@
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
+"    -> Custom changes
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -373,3 +374,33 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Custom changes
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable mouse scrolling
+set mouse=a
+
+" Show the line numbers
+set number
+
+" Height of the command bar
+set cmdheight=1
+
+" Colors
+colorscheme dracula
+
+" Tabs/spaces
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
+
+" Status line
+set statusline=
+
+" Open split on the right and bottom
+set splitright
+set splitbelow
+
+" Don't add a bit extra margin to the left
+set foldcolumn=0
